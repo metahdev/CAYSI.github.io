@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body onload = "setText()">
+
+    <div class="header">
+      <div class="header-container">
+
+        <div class="header-logo">
+          <p class="site-name">CAYSI</p>
+        </div>
+
+        <div class="nav">
+          <a class="nav-text" href="index.html">Home</a>
+          <a class="nav-text" id="chosen-page" href="join.html">Join us</a>
+          <a class="nav-text" href="about.html">About us</a>
+          <a class="nav-text" href="societies.html">Societies</a>
+        </div>
+
+
+        <div style="display: flex; position: absolute; top:50%; right: 0;">
+          <div class="header-img">
+            <img class="location-img" src="images/location.svg"/>
+          </div>
+
+          <div class="header-city">
+      
+            <div class="dropdown">
+              <div class="dropdown-select">
+                <p class="city-name" id="city-text">Tashkent</p>
+                <div class="dropdown-caret"></div>
+              </div>
+
+              <ul class="dropdown-menu">
+                <li>Tashkent</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+
+
+
+    <div class="joinpage">
+      <div class="joinpage-first">
+
+        <div class="joinpage-first-header">
+          <p class="joinpage-first-header-text">Join CAYSI</p>
+        </div>
+
+        <div class="joinpage-first-content-text">
+          <p class="joinpage-first-content-header">Add your own contribution into activating the youth!</p>
+          <p class="joinpage-first-text">Welcome to the application page for organizations seeking to join our community! Here, you can submit your organization's details to become part of a network dedicated to advancing political and social causes. </p>
+        </div>
+
+        <div class="joinpage-first-content-image">
+          <img class="joinpage-first-img" src="images/jumping-people.png" />
+        </div>
+
+      </div>
+
+      <div class="joinpage-second">
+        <div class="application-header">
+          <p class="application">Application</p>
+        </div>
+
+        <div class="joinpage-second-container">
+          <form id="myForm" enctype="multipart/form-data" method="post" action="https://script.google.com/macros/s/AKfycbxE37rRSnPbguoGkLjEhf0dZ9wXEXOzUQWK4kL4AZ5oMQjSiP9bWKBACubRAWFtBIX6/exec">
+            <input type="text" id="organization" placeholder="Name of your Social Organization" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="location" placeholder="Location" required>
+      
+            <div id="label-logo">
+              <span class="span1" id="selected-file1">Upload your logo</span>
+              <input type="file" id="logo" 
+              accept="image/*, .pdf"
+              required>
+              <span class="span2" id="select-file1">Select files</span>
+            </div>
+
+            <div id="label-gallery">
+              <span class="span1" id="selected-file2">Upload pictures for the gallery</span>
+              <input type="file" id="gallery" 
+              accept="image/*, .pdf"
+              multiple
+              required>
+              <span class="span2" id="select-file2">Select files</span>
+            </div>
+      
+
+            <textarea id="description" placeholder="Short description of your society" fixed required></textarea>
+          
+            <button type="submit" id="submit-button">
+          </form>
+        </div>
+
+        <div class="apply-button" id="apply-button">
+          <span class="apply-button-content">Apply!</span>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    
+    <div class="gallery">
+      <img class="gallery-img" src="images/gallery.png"/>
+    </div>
+
+    <div class="footer">
+
+      <div class="footer-container">
+
+        <div class="learn">
+          <div class="learn-more">
+            <p class="learn-text">Learn more</p>
+          </div>
+          <div class="links">
+            <a class="links-text" href="index.html">Home</a>
+            <a class="links-text" href="join.html">Join CAYSI</a>
+            <a class="links-text" href="about.html">About us</a>
+            <a class="links-text" href="about.html">Societies</a>
+          </div>
+        </div>
+
+        <div class="find">
+          <div class="find-us">
+            <p class="find-text">Find us</p>
+          </div>
+          <div class="media-links">
+            <a class="links-text" href="index.html">Telegram</a>
+            <a class="links-text" href="join.html">Instagram</a>
+            <a class="links-text" href="about.html">LinkedIn</a>
+            <a class="links-text" href="about.html">Contact us</a>
+          </div>
+        </div>
+
+        <div class="footer-logo">
+          <p class="footer-text">CAYSI</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="js/logic.js"></script>
+  </body>
+
+</html>

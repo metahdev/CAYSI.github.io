@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body onload="setText()">
+
+    <div class="header">
+      <div class="header-container">
+
+        <div class="header-logo">
+          <p class="site-name">CAYSI</p>
+        </div>
+
+        <div class="nav">
+          <a class="nav-text" id="chosen-page" href="index.html">Home</a>
+          <a class="nav-text" href="join.html">Join us</a>
+          <a class="nav-text" href="about.html">About us</a>
+          <a class="nav-text" href="societies.html">Societies</a>
+        </div>
+
+        <div style="display: flex; position: absolute; top:50%; right: 0;">
+          <div class="header-img">
+            <img class="location-img" src="images/location.svg"/>
+          </div>
+
+          <div class="header-city">
+      
+            <div class="dropdown">
+              <div class="dropdown-select">
+                <p class="city-name" id="city-text">Tashkent</p>
+                <div class="dropdown-caret"></div>
+              </div>
+
+              <ul class="dropdown-menu">
+                <li>Tashkent</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+
+
+
+    <div class="homepage">
+
+        <div class="homepage-first">
+
+            <div class="hands">
+              <img class="hands-img" src="images/hands.png" />
+            </div>
+
+            <div class="hands-text">
+
+              <div class="allofthe-header">
+                <p class="allofthe-header-text">All of the political and social societies in one place of your region</p>
+              </div>
+
+              <div class="allofthe">
+                <p class="allofthe-text">All the political and social groups of our region by high schoolers are coming together in one place! They're standing up for what they believe in, advocating for fairness, equality, and a brighter future.</p>
+              </div>
+
+              <div class="check-button">
+                <a href="join.html">
+                  <img src="images/homepage-button.svg" />
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="homepage-second">
+
+          <div class="homepage-second-header">
+            <p class="homepage-second-header-text">Featuring</p>
+          </div>
+
+          <div class="homepage-second-header2">
+            <p class="homepage-second-header-text2">Here are some of the most active and popular organizations in your region</p>
+          </div>
+
+          <div class="featuring-icons">
+            <div class="featuring-icons-first">
+              <img class="featuring-psad" src="images/psad.svg" />
+              <p class="featuring-icons-header">PSAD</p>
+              <p class="featuring-icons-text">Intellectual</p>
+            </div>
+
+            <div class="featuring-icons-second">
+              <img class="featuring-nufuz" src="images/nufuz.svg" />
+              <p class="featuring-icons-header">Nufuz</p>
+              <p class="featuring-icons-text">Charity</p>
+            </div>
+
+            <div class="featuring-icons-third">
+              <img class="featuring-nemolchi" src="images/nemolchi.svg" />
+              <p class="featuring-icons-header">Nemolchi</p>
+              <p class="featuring-icons-text">Political</p>
+            </div>
+          </div>
+
+          <div class="see-more">
+            <a href="societies.html">
+              <img class="see-more-button" src="images/seemore-button.svg" />
+            </a>
+          </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    
+    <div class="gallery">
+      <img class="gallery-img" src="images/gallery.png"/>
+    </div>
+
+    <div class="footer">
+
+      <div class="footer-container">
+
+        <div class="learn">
+          <div class="learn-more">
+            <p class="learn-text">Learn more</p>
+          </div>
+          <div class="links">
+            <a class="links-text" href="index.html">Home</a>
+            <a class="links-text" href="join.html">Join CAYSI</a>
+            <a class="links-text" href="about.html">About us</a>
+            <a class="links-text" href="about.html">Societies</a>
+          </div>
+        </div>
+
+        <div class="find">
+          <div class="find-us">
+            <p class="find-text">Find us</p>
+          </div>
+          <div class="media-links">
+            <a class="links-text" href="index.html">Telegram</a>
+            <a class="links-text" href="join.html">Instagram</a>
+            <a class="links-text" href="about.html">LinkedIn</a>
+            <a class="links-text" href="about.html">Contact us</a>
+          </div>
+        </div>
+
+        <div class="footer-logo">
+          <p class="footer-text">CAYSI</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="js/logic.js"></script>
+  </body>
+
+</html>

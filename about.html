@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css" />
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body onload="setText()">
+
+    <div class="header">
+      <div class="header-container">
+
+        <div class="header-logo">
+          <p class="site-name">CAYSI</p>
+        </div>
+
+        <div class="nav">
+          <a class="nav-text" href="index.html">Home</a>
+          <a class="nav-text" href="join.html">Join us</a>
+          <a class="nav-text" id="chosen-page" href="about.html">About us</a>
+          <a class="nav-text" href="societies.html">Societies</a>
+        </div>
+
+        <div style="display: flex; position: absolute; top:50%; right: 0;">
+          <div class="header-img">
+            <img class="location-img" src="images/location.svg"/>
+          </div>
+
+          <div class="header-city">
+      
+            <div class="dropdown">
+              <div class="dropdown-select">
+                <p class="city-name" id="city-text">Tashkent</p>
+                <div class="dropdown-caret"></div>
+              </div>
+
+              <ul class="dropdown-menu">
+                <li>Tashkent</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+      </div>  
+    </div>
+
+
+
+    <div class="aboutus">
+      <div class="aboutus-header">
+        <p class="aboutus-header-text">About us</p>
+      </div>
+
+      <div class="aboutus-container">
+        <div class="aboutus-container-content">
+          <img src="images/aboutus1.png" class="aboutus-imgleft"/>
+          <p class="aboutus-headerright">What is CAYSI?</p>
+          <p class="aboutus-coheaderright">Central Asian Youth Social Initiiatives</p>
+          <p class="aboutus-textright" id="aboutus-text1">It is an online platform that connects <b>student-run societies across Central Asia.</b> It serves as a hub for youth to promote their projects, attract participants, and gain valuable recognition.</p>
+        </div>
+      </div>
+
+      <div class="aboutus-container" style="background-color: #242423">
+        <div class="aboutus-container-content">
+          <img src="images/aboutus2.png" class="aboutus-imgright"/>
+          <p class="aboutus-headerleft" style="color: #FFC823">Why trust CAYSI?</p>
+          <p class="aboutus-coheaderleft" style="color: #FFFFFF">Where is the support coming from?</p>
+          <p class="aboutus-textleft" id="aboutus-text2" style="color: #FFFFFF">CAYSI is supported by the <b>Political Computer Science Student Association from UC Berkeley.</b> These partnerships enhance the platform's  <b>credibility</b>, providing valuable resources  to young leaders across Central Asia. </p>
+        </div>
+      </div>
+
+      <div class="aboutus-container">
+        <div class="aboutus-container-content">
+          <img src="images/aboutus3.png" class="aboutus-imgleft"/>
+          <p class="aboutus-headerright">Javlon Khasanov</p>
+          <p class="aboutus-coheaderright">Tashkent Presidential School ‘25</p>
+          <p class="aboutus-textright" id="aboutus-text3">Javlon’s aim to <b>solve activism issues</b> in Central Asia arising from autocratic regimes that ruled our countries for centuries with CAYSI</p>
+        </div>
+      </div>
+
+      <div class="aboutus-container" style="background-color: #242423">
+        <div class="aboutus-container-content">
+          <img src="images/aboutus4.png" class="aboutus-imgright"/>
+          <p class="aboutus-headerleft" style="color: #FFC823">Askar Almukhamet</p>
+          <p class="aboutus-coheaderleft" style="color: #FFFFFF">UC Berkeley ‘27</p>
+          <p class="aboutus-textleft" id="aboutus-text4" style="color: #FFFFFF">Askar facilitated the technical background and <b>helped to achieve recognition and support</b> from student organizations from his university</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+    <div class="gallery">
+      <img class="gallery-img" src="images/gallery.png"/>
+    </div>
+
+    <div class="footer">
+
+      <div class="footer-container">
+
+        <div class="learn">
+          <div class="learn-more">
+            <p class="learn-text">Learn more</p>
+          </div>
+          <div class="links">
+            <a class="links-text" href="index.html">Home</a>
+            <a class="links-text" href="join.html">Join CAYSI</a>
+            <a class="links-text" href="about.html">About us</a>
+            <a class="links-text" href="about.html">Societies</a>
+          </div>
+        </div>
+
+        <div class="find">
+          <div class="find-us">
+            <p class="find-text">Find us</p>
+          </div>
+          <div class="media-links">
+            <a class="links-text" href="index.html">Telegram</a>
+            <a class="links-text" href="join.html">Instagram</a>
+            <a class="links-text" href="about.html">LinkedIn</a>
+            <a class="links-text" href="about.html">Contact us</a>
+          </div>
+        </div>
+
+        <div class="footer-logo">
+          <p class="footer-text">CAYSI</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="js/logic.js"></script>
+  </body>
+
+</html>
