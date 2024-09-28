@@ -1,494 +1,212 @@
-/* Styles for tablets (portrait and landscape orientation) */
 @media only screen and (max-width: 768px) {
-    body{
-        width: 768px;
+    body {
+        width: 100%; /* Make the body width flexible */
+        margin: 0;
+        padding: 0;
     }
 
+    /* Header Section */
     .header {
-        height: 150px;
-        width: 80%;
+        height: auto;
+        width: 100%; /* Make the header full width */
         position: relative;
         z-index: 2;
-
         background-color: #e0e0e0;
     }
     
     .header-container {
-        position: absolute;
-        height: 120px;
-        width: 80%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        
+        position: relative; /* Relative positioning for flexibility */
+        height: auto;
+        width: 100%;
+        padding: 10px;
         background-color: aqua;
+        display: flex; /* Use flexbox for alignment */
+        justify-content: space-between;
+        align-items: center;
     }
     
     .header-logo {
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
+        font-size: 24px;
     }
     
     .nav {
-        display: inline-block;
-        position: relative;
-        top: 100px;
-        left: 50%;
-        transform: translateX(-50%);
+        display: flex; /* Flexbox for navigation */
+        gap: 10px; /* Space between nav items */
+        justify-content: center;
     }
-    
-    .header-city{
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+
+    .nav-text {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .header-city {
         display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    
-    .header-img {
-        display: flex;
-        margin: auto;
-        margin-right: 0px;
-        margin-top: -15px;
-    }
-    
+
+    /* Dropdown Styles */
     .dropdown {
         display: flex;
-        margin: auto;
-    
-    }
-    
-    .dropdown * {
-        box-sizing: border-box;
-    }
-    
-    .dropdown-select{
-        display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 8px;
         cursor: pointer;
-        transition: background 0.3s;
-        border-radius: 15px;
     }
-    
-    .dropdown-select-clicked {
-        border-radius: 15px 15px 0px 0px;
-        background-color: #e0e0e0;
-    }
-    
-    .dropdown-select:hover {
-        background-color: #FFC823;
-    }
-    
-    .dropdown-caret {
-        border-color: #000;
-        width: 0;
-        height: 0;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 6px solid #000;
-        transition: 0.3s;
-        margin-left: 4px;
-        margin-top: 4px;
-        border-radius: 5px;
-    }
-    
-    .caret-rotate {
-        transform: rotate(180deg);
-    }
-    
+
     .dropdown-menu {
-        list-style: none;
-        padding: 0.2em 0.5em;
-        border-radius: 0px 0px 15px 15px;
-        background-color: #e0e0e0;
-        color: #000000;
-        position: absolute;
-        top: 3.0em;
-        left: 50%;
-        width: 100%;
-        transform: translateX(-50%);
-        opacity: 0;
         display: none;
-        transition: 0.2s;
-    }
-    
-    .dropdown-menu li{
-        padding: auto;
-        padding-top: 0.6em;
-        padding-bottom: 0.6em;
-        margin: auto;
-        margin-bottom: 5px;
-        margin-top: 5px;
-        text-align: center;
-        border-radius: 0.5em;
-        cursor: pointer;
-    }
-    
-    .dropdown-menu li:hover {
-        background: #000000;
-        color: #ffffff;
-    }
-    
-    .dropdown-active {
-        background: #FFC823;
-    }
-    
-    .dropdown-menu-open {
-        display: block;
-        opacity: 1;
-    }
-    
-    .site-name {
-        font-family: "Darker Grotesque", sans-serif;
-        font-weight: bold;
-        font-size: 40px;
-    }
-    
-    .nav-text {
-        display: inline-block;
-        margin-left: 15px;
-        margin-right: 15px;
-        text-decoration: none;
-        color: black;
-        font-family: "Darker Grotesque", sans-serif;
-        font-weight: bold;
-        font-size: 30px;
-    }
-    
-    .location-img {
-        height: 24px;
-        width: 24px;
-        padding-top: 5px;
-    }
-    
-    .city-name {
-        font-family: "Darker Grotesque", sans-serif;
-        font-weight: bold;
-        font-size: 25px;
-        text-align: center;
-        width: 100px;
-    }
-    
-    li {
-        font-family: "Darker Grotesque", sans-serif;
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    /************
-    *************
-    *************
-    FOOTER GALLERY
-    *************
-    *************
-    *************/
-
-    .gallery {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        width: 768px;
-    }
-
-    .gallery-img {
-        display: flex;
-        height: 100%;
+        position: absolute;
+        background-color: #e0e0e0;
+        list-style: none;
         width: 100%;
-        max-width: 768px;
+        left: 0;
+        padding: 10px 0;
+        border-radius: 0 0 15px 15px;
+        z-index: 3;
     }
 
-    /************
-    *************
-    *************
-    THE FOOTER
-    *************
-    *************
-    *************/
+    .dropdown-menu-open {
+        display: block; /* Show the dropdown menu */
+    }
 
+    .dropdown-menu li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Footer Section */
     .footer {
         background-color: #FADFAD;
-        height: 420px;
+        height: auto;
         width: 100%;
-        max-width: 768px;
-        position: relative;
-    }
-
-    .footer-container {
-        position: absolute;
-        display: inline-block;
-        height: 230px;
-        width: 80%;
-        max-width: 768px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .learn {
-        width: 120px;
-        display: inline-block;
-    }
-
-    .learn-more {
-        display: inline-block;
-    }
-
-    .learn-text {
-        font-family: "Darker Grotesque", sans-serif;
-        font-size: 50px;
-        font-weight: bold;
-    }
-
-    .links {
-        width: 200px;
-    }
-
-    .links-text {
-        display: block;
-        text-decoration: none;
-        color: black;
-        font-family: "Inter", sans-serif;
-        font-size: 30px;
-        font-weight: 300;
-        margin-bottom: 2px;
-    }
-
-    .find {
-        width: 120px;
-        display: inline-block;
-    }
-
-    .find-us {
-        display: inline-block;
-    }
-
-    .find-text {
-        font-family: "Darker Grotesque", sans-serif;
-        font-size: 50px;
-        font-weight: bold;
-    }
-
-    .media-links {
-        width: 150px;
-    }
-
-    .footer-logo {
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(0, -50%);
-        width: 80px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-text {
         font-family: "Darker Grotesque", sans-serif;
-        font-size: 96px;
-        font-weight: bold;
+        font-size: 50px;
+        text-align: center;
     }
 
+    .links-text {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 
-
-
-
-
+    /* Main Content (Homepage) */
     .homepage {
-        height: 1650px;
-        width: 80%;
-        max-width: 768px;
-        position: relative;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
     }
     
     .homepage-first {
-        position: absolute;
-        display: inline-block;
-        height: 1050px;
-        width: 80%;
-        left: 50%;
-        transform: translate(-50%);
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
         background-color: aqua;
     }
-    
+
     .hands {
-        display: block;
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
     }
-    
+
     .hands-img {
-        height: 30em;
-        width: 30em;
+        width: 80%; /* Ensure the image scales */
+        max-width: 300px;
+        height: auto;
     }
-    
+
     .hands-text {
-        height: 450px;
-        display: block;
-        position: absolute;
-        top: 550px;
-        left: 50%;
-        transform: translateX(-50%);
+        text-align: center;
     }
-    
-    .allofthe-header {
-        width: auto;
-        height: auto;
-    }
-    
+
     .allofthe-header-text {
-        font-family: "Darker Grotesque", sans-serif;
-        font-size: 68px;
-        font-weight: bold;
-        line-height: 70px;
+        font-size: 36px;
+        line-height: 1.2;
         text-align: center;
     }
-    
-    .allofthe {
-        width: auto;
-        height: auto;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    
+
     .allofthe-text {
-        font-family: "Inter", sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 1.5;
         text-align: center;
-    }
-    
-    .homepage-line {
-        height: 1px;
-        width: 90%;
-        display: block;
-        position: absolute;
-        top: 665px;
-    }
-    
-    hr {
-        border-color: black;
-        border-width: 1px;
+        margin-top: 15px;
     }
 
     .check-button {
-        width: auto;
-        height: auto;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .homepage-second {
-        position: absolute;
-        display: inline;
-        width: 100%;
-        height: 600px;
-        
-        background-color: #242423;
-        top: 1050px;
-        left: 50%;
-        transform: translate(-50%);
-    }
-    
-    .homepage-second-header {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    
-    .homepage-second-header-text {
-        font-family: "Darker Grotesque", sans-serif;
-        font-size: 65px;
-        font-weight: bold;
-        line-height: 70px;
+        margin-top: 20px;
         text-align: center;
+    }
+
+    /* Second section */
+    .homepage-second {
+        background-color: #242423;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .homepage-second-header-text {
+        font-size: 36px;
         color: #FFC823;
     }
-    
-    .homepage-second-header2 {
-        width: 80%;
-        max-width: 750px;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-    }
-    
+
     .homepage-second-header-text2 {
-        font-family: "Inter", sans-serif;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 30px;
-        text-align: center;
+        font-size: 18px;
         color: white;
     }
-    
+
+    /* Icons section */
     .featuring-icons {
-        height: 220px;
-        width: 80%;
-        position: absolute;
-        left: 50%;
-        top: 60%;
-        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
 
-        background-color: #FFC823;
-    }
-    
-    .featuring-icons-first {
-        display: inline-block;
-        position: absolute;
-        left: 0%;
-    }
-    
-    .featuring-icons-second {
-        display: inline-block;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-    }
-    
+    .featuring-icons-first,
+    .featuring-icons-second,
     .featuring-icons-third {
-        display: inline-block;
-        position: absolute;
-        right: 0%;
-    }
-    
-    .featuring-icons-header {
-        font-family: "Darker Grotesque", sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-        line-height: 54px;
-        text-align: center;
-        color: white;
-    }
-    
-    .featuring-icons-text {
-        font-family: "Inter", sans-serif;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 29px;
-        text-align: center;
-        color: white;
-    }
-    
-    .see-more {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .featuring-image {
-        width: 8em;
-        height: 8em;
+    .featuring-icons-header {
+        font-size: 20px;
+        color: white;
     }
-    
+
+    .featuring-icons-text {
+        font-size: 14px;
+        color: white;
+    }
+
+    .see-more {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .gallery {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .gallery-img {
+        width: 100%;
+        height: auto;
+    }
 }
+
 
 
 
