@@ -1,6 +1,10 @@
 const dropdowns = document.querySelectorAll('.dropdown');
 var city = "Tashkent";
 
+window.onload = function() {
+    document.body.style.zoom = "100%"; // Resets CSS zoom (not browser zoom)
+};
+
 dropdowns.forEach(dropdown => {
     const select = dropdown.querySelector('.dropdown-select');
     const caret = dropdown.querySelector('.dropdown-caret');
@@ -99,6 +103,11 @@ gallery_file.addEventListener("change", function( ) {
 
 button.addEventListener("click", function(){
 
+    orig_button.click();
+});
+
+orig_button.addEventListener("click", function(){
+
     let logoUploaded = logo_file.files.length > 0;
     let galleryUploaded = gallery_file.files.length > 0;
 
@@ -109,11 +118,7 @@ button.addEventListener("click", function(){
 
     if (!galleryUploaded) {
         // If no gallery files are uploaded, make the text red
-        document.getElementById("selected-file1").color = "red";
-    }
-
-    if (logoUploaded && galleryUploaded) {
-        orig_button.click();
+        document.getElementById("selected-file2").style.color = "red";
     }
 });
 
